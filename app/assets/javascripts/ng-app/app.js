@@ -1,10 +1,15 @@
-angular.module('EasyPay', ['ngRoute', 'templates'])
+angular.module('EasyPay', ['ngRoute', 'templates', 'ngDragDrop'])
     .config(function ($routeProvider, $locationProvider) {
          $routeProvider
              .when('/', {
-                            templateUrl: '_login.html',
-                            controller: 'LoginCtrl',
-                            controllerAs: 'login'
-                        });
+                 templateUrl: 'login.html',
+                 controller: 'LoginCtrl',
+                 controllerAs: 'login'
+            })
+            .when('/table',{
+                templateUrl: 'table.html',
+                controller: 'TableCtrl',
+                controllerAs: 'table'    
+            });
         $locationProvider.html5Mode(true);
     });
