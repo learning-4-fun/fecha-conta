@@ -15,5 +15,6 @@
 //= require angular
 //= require angular-route
 //= require angular-rails-templates
+//= require angular-dragdrop
 //= require_tree ../templates
 //= require_tree .
