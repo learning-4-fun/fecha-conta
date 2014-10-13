@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 # Use angularJS for Front-end
 gem 'bower-rails'
 gem 'angular-rails-templates'
+
+# Use to login in Facebook
+gem 'koala'
