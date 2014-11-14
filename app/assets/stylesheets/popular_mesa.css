@@ -1,0 +1,26 @@
+#usuarios {
+  background-color:  #ffff00;
+}
+
+.usuario {
+  background-color: #00ddaa;
+  border-radius: 50px;
+  display: inline-block;
+  height: 100px;
+  margin: 10px;
+  width: 100px;
+}
+
+#salao {
+  background-color: #eeffbb;
+  height: 400px;
+  padding-top: 100px;
+}
+
+#mesa {
+  background-color: #00ffff;
+  border-radius: 150px;
+  height: 300px;
+  margin: 0 auto;
+  width: 300px;
+}

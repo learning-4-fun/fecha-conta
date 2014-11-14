@@ -11,5 +11,4 @@ angular.module('EasyPay', ['ngRoute', 'templates', 'ngDragDrop'])
                 controller: 'TableCtrl',
                 controllerAs: 'table'    
             });
-        $locationProvider.html5Mode(true);
     });
