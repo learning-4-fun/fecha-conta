@@ -1,24 +1,35 @@
 <div id="usuarios">
 	<div class="usuario">
-	Jão
 	</div>
 	<div class="usuario">
-	Zé
 	</div>
 	<div class="usuario">
-	Tonho
 	</div>		
 	<div class="usuario">
-	Tião
 	</div>
 	<div class="usuario">
-	Pedrão
 	</div>
 	<div class="usuario">
-	Bagaceira
 	</div>
 </div>
 
 <div id="salao">
 	<div id="mesa">Mesa</div>
 </div>
+
+<script type="text/javascript">
+$(document).ready(function  () {
+	$('.usuario').mouseenter(function () {
+		$(this).animate({
+			height: '+=5px',
+			width: '+=5px'
+		});
+	});
+	$('.usuario').mouseleave(function () {
+		$(this).animate({
+			height: '-=5px',
+			width: '-=5px'
+		});
+	});
+});
+</script>
