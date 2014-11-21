@@ -3,7 +3,7 @@
 * Dependencies
 
 The environment needs to have the following resources:
-NodeJS, ruby 2.1.3 and rails 4.1.6
+NodeJS, ruby 2.1.3, rails 4.1.6 and [Koala](https://github.com/arsduo/koala/wiki/Graph-API)
 
 * Tools
 
