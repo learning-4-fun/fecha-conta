@@ -122,4 +122,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # forward port
   config.vm.network "forwarded_port", guest: 3000, host: 3000
+
+  # provision ssh
+  config.vm.provision :shell, path: "bootstrap.sh"
 end
