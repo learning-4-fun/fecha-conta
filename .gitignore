@@ -16,5 +16,6 @@
 /tmp
 
 /lib/assets/*
+/lib*
 npm-debug.log
 Gemfile.lock

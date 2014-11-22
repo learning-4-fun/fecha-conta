@@ -1,16 +1,24 @@
 #usuarios {
-  background-color:  #ffff00;
+  background-color:  #A0522D;
 }
 
 .moldura-usuario {
-  
-}
-.usuario {
-  background-color: #00ddaa;
-  border-radius: 55px;
   display: inline-block;
   height: 100px;
   margin: 10px;
+  width: 100px;
+}
+.usuario {
+  background-color: #09ddaa;
+  border-radius: 55px;
+  height: 90px;
+  width: 90px;
+}
+
+.usuario:hover {
+  background-color: #09ddaa;
+  border-radius: 55px;
+  height: 100px;
   width: 100px;
 }
 

@@ -1,4 +1,4 @@
-angular.module('EasyPay', ['ngRoute', 'templates', 'ngDragDrop'])
+angular.module('EasyPay', ['ngRoute', 'templates'])
     .config(function ($routeProvider, $locationProvider) {
          $routeProvider
              .when('/', {
