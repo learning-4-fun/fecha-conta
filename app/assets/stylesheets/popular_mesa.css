@@ -1,37 +1,61 @@
 #usuarios {
-  background-color:  #A0522D;
+  background-color:  #E5E5E5;
 }
 
 .moldura-usuario {
   display: inline-block;
-  height: 100px;
-  margin: 10px;
-  width: 100px;
+  height: 55px;
+  margin: 5px;
+  width: 155px;
+  padding: 1px;  
 }
+
 .usuario {
-  background-color: #09ddaa;
-  border-radius: 55px;
-  height: 90px;
-  width: 90px;
+  background-color: #FFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 5% 0 0 5%;
+  font-weight: bold;
+  height: 50px;
+  width: 150px;
+  padding: 0px;  
 }
 
 .usuario:hover {
-  background-color: #09ddaa;
-  border-radius: 55px;
-  height: 100px;
-  width: 100px;
+  border: solid 1px #55ACED;
+  padding: 0px;
+}
+
+.usuario img {
+  border-radius: 5% 0 0 5%;
+}
+
+.usuario div {
+  display: inline;
+  height: 50px;
+  position: relative;
+  top: -50%;
 }
 
 #salao {
-  background-color: #eeffbb;
+  background-color: #F5F5F5;
   height: 400px;
   padding-top: 100px;
 }
 
+#moldura-mesa {
+
+}
+
 #mesa {
-  background-color: #00ffff;
-  border-radius: 150px;
+  background-color: #F05722;
+  border-radius: 50%;
   height: 300px;
   margin: 0 auto;
   width: 300px;
 }
+
+#mesa:hover {
+  border-radius: 50%;
+  height: 310px;
+  width: 310px;
+};
