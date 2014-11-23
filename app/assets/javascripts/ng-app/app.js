@@ -1,5 +1,5 @@
-angular.module('EasyPay', ['ngRoute', 'templates', 'ngDragDrop'])
-    .config(function ($routeProvider, $locationProvider) {
+angular.module('EasyPay', ['ngRoute', 'templates', 'directive.facebook.user'])
+    .config(function ($routeProvider) {
          $routeProvider
              .when('/', {
                  templateUrl: 'login.html',
@@ -8,7 +8,6 @@ angular.module('EasyPay', ['ngRoute', 'templates', 'ngDragDrop'])
             })
             .when('/table',{
                 templateUrl: 'table.html',
-                controller: 'TableCtrl',
-                controllerAs: 'table'    
+                controller: 'TableCtrl'  
             });
     });
