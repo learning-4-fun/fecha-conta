@@ -1,41 +1,7 @@
 <div id="usuarios">
-	<div class="moldura-usuario">
-		<div class="usuario"></div>
-	</div>
-	<div class="moldura-usuario">
-		<div class="usuario"></div>
-	</div>	
-	<div class="moldura-usuario">
-		<div class="usuario"></div>
-	</div>
-	<div class="moldura-usuario">
-		<div class="usuario"></div>
-	</div>
-	<div class="moldura-usuario">
-		<div class="usuario"></div>
-	</div>
-	<div class="moldura-usuario">
-		<div class="usuario"></div>
-	</div>		
+	<div ng-repeat="friend in friends" data-fb-user friend="friend"></div>		
 </div>
-
+ 
 <div id="salao">
 	<div id="mesa">Mesa</div>
 </div>
-
-<script type="text/javascript">
-$(document).ready(function  () {
-	$('.usuario').mouseenter(function () {
-		$(this).animate({
-			height: '+=5px',
-			width: '+=5px'
-		});
-	});
-	$('.usuario').mouseleave(function () {
-		$(this).animate({
-			height: '-=5px',
-			width: '-=5px'
-		});
-	});
-});
-</script>

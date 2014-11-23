@@ -1,4 +1,4 @@
 angular.module('EasyPay')
-    .controller('TableCtrl', function () {
-        this.status = "Funcionando";
-    });
+.controller('TableCtrl', ['$scope', '$http', function ($scope, $http) {
+	$scope.friends = [{id: 'helio.albanodeoliveira'}, {id: 'bnkbreno'}, {id: 'vinicius.jesus.9634'}, {id: 'biro.biro.71'}];
+}]);
