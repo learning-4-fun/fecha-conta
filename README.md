@@ -17,13 +17,5 @@ sudo npm install bower -g
 ```
 
 bundle install
-```
-
-```
-rake bower:install
-```
-
-```
-rails s
-
+rake dev
 ```
