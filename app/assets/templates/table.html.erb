@@ -2,7 +2,9 @@
     <div ng-repeat="friend in friends" data-fb-user friend="friend" class="moldura-usuario"></div>		
 </div>
  
-<div id="salao">
+<div id="salao" ondragenter="return dragEnter(event)" 
+     ondrop="return dragDrop(event)" 
+     ondragover="return dragOver(event)">
 	<div id="moldura-mesa">
     	<div id="mesa"></div>
     </div>
