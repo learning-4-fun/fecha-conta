@@ -2,10 +2,26 @@
     <div ng-repeat="friend in friends" data-fb-user friend="friend" class="moldura-usuario"></div>		
 </div>
  
-<div id="salao" ondragenter="return dragEnter(event)" 
-     ondrop="return dragDrop(event)" 
-     ondragover="return dragOver(event)">
+  <div id="salao"> 
 	<div id="moldura-mesa">
-    	<div id="mesa"></div>
+      	<div id="mesa" 
+                ondrop="drop(event)"
+                ondragenter="dragEnter(event)"
+                ondragleave="dragLeave(event)"></div>
     </div>
 </div>
+<script type="text/javascript">
+function drop(event) {
+  var data = ev.dataTransfer.getData('text/html');
+  event.preventDefault();
+  return false;
+};
+
+function dragEnter(event) {
+  event.target.style.border = "5px solid #22FF44"; 
+};
+
+function dragLeave(event) {
+  event.target.style.border = "none";
+};
+</script>

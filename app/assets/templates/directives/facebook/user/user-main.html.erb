@@ -1,12 +1,24 @@
-<div class="usuario" draggable="true" ondragstart="return dragStart(event)">
+<div class="usuario" draggable="true" 
+                               ondragstart="dragStart(event)" 
+                               ondragover="dragOver(event)" 
+                               ondragend="dragEnd(event)">
 	<img src="http://graph.facebook.com/{{user.id}}/picture" alt="{{user.first_name}}" height="50" width="50">
 	<div>{{user.first_name}}</div>
 </div>
 <script type="text/javascript">
-function dragStart(ev) {
-   ev.dataTransfer.effectAllowed='move';
-   ev.dataTransfer.setData("Text", ev.target.getAttribute('id'));
-   ev.dataTransfer.setDragImage(ev.target,0,0);
+function dragStart(event) {
+   event.dataTransfer.effectAllowed='move';
+   event.dataTransfer.setData('text/html', "Novo integrante da mesa");
+
    return true;
-}
+};
+
+function dragEnd(event) {
+  
+};
+
+function dragOver(event) {
+  event.preventDefault();
+  return false;
+};
 </script>
