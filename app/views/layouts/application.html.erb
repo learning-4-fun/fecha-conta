@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body ng-app="EasyPay">
-    <h3><a href="/">Login</a></h3>
-    <h3><a href="#/table">Mesa</a></h3>
+
+<header id="main-page-header">
+  <h1>Easy Pay</h1>
+</header>
+  <nav>
+      <a href="/">Login</a>
+      <a href="#/table">Mesa</a>  
+      <hr>
+  </nav>
+</div>
 <%= yield %>
 
 </body>
